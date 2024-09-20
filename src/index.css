@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.kcButtonClass,
+.kcButtonBlockClass,
+.kcButtonLargeClass {
+    @apply bg-green-500 w-full rounded-sm hover:bg-green-400;
+}
+
+body .kcInputClass {
+    @apply border-b-0 border-2 rounded-sm;
+}
+
+#kc-header-wrapper {
+    @apply flex justify-center;
+}
+
+body .kcFormCardClass {
+    @apply rounded-sm border-none shadow-md;
+}
