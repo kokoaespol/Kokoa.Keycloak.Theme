@@ -4,7 +4,6 @@ import { StrictMode } from "react";
 import { KcPage } from "./kc.gen";
 import "./index.css";
 
-/// ---- Comment this when building for production
 import { getKcContextMock } from "./login/KcPageStory";
 
 if (import.meta.env.DEV) {
@@ -13,7 +12,6 @@ if (import.meta.env.DEV) {
         overrides: {}
     });
 }
-///---
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>

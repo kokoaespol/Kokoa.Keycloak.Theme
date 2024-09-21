@@ -2,14 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    :root {
+        --color-accent: 86 54% 51%;
+        --color-accent-secondary: 33 98% 54%;
+        --color-accent-tertiary: 18 71% 45%;
+    }
+}
+
+.login-pf body {
+    background-image: none;
+    @apply bg-cover h-full bg-gradient-to-b from-accent via-accent-secondary to-accent-tertiary;
+}
+
 .kcButtonClass,
 .kcButtonBlockClass,
 .kcButtonLargeClass {
-    @apply bg-green-500 w-full rounded-sm hover:bg-green-400;
+    @apply bg-accent w-full rounded-sm hover:bg-accent/80 text-white;
 }
 
-body .kcInputClass {
-    @apply border-b-0 border-2 rounded-sm;
+.kcFormPasswordVisibilityButtonClass {
+    @apply bg-accent text-white px-4 border border-gray-400 border-l-0 hover:bg-accent/80;
+}
+
+.kcInputClass {
+    @apply rounded-sm shadow-none border border-solid border-gray-400 outline-accent;
 }
 
 #kc-header-wrapper {

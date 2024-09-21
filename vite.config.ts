@@ -7,7 +7,10 @@ export default defineConfig({
     plugins: [
         react(),
         keycloakify({
-            accountThemeImplementation: "none"
+            accountThemeImplementation: "none",
+            groupId: "ec.edu.espol.kokoa",
+            artifactId: "theme",
+            themeName: "kokoa"
         })
     ]
 });

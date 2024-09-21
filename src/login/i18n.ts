@@ -2,10 +2,10 @@ import { createUseI18n } from "keycloakify/login";
 
 export const { useI18n, ofTypeI18n } = createUseI18n({
     en: {
-        loginAccountTitle: "Welcome back to Kokoa"
+        loginAccountTitle: "Embrace Free Software"
     },
     es: {
-        loginAccountTitle: "Bienvenido de vuelta a Kokoa"
+        loginAccountTitle: "Vive el Software Libre"
     }
 });
 
